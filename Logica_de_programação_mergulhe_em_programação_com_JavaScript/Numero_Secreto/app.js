@@ -1,20 +1,23 @@
 let NumeroSecreto = 29;
-let tentativa = prompt('Escolha seu numero:');
-if (NumeroSecreto == tentativa) {
-    console.log('Muito bom, você acertou!! O número era ' + NumeroSecreto + '!!') 
-    // ou ${NumeroSecreto}              OUTRO METODO DE INSERIR VARIAVEIS
-  
-    // Em inspecionar irá mostrar em console.
-    // Este escopo esta definindo que sempre será alterado automaticamente a variavel
-    // isto se chama diminuir o ACOPLAMENTO do codigo, sendo uma boa pratica deixando mais automatico
-    alert('Muito bom, você acertou!!')
-    
-}
-else{
-    if(NumeroSecreto < tentativa){
-        alert(`O número ${tentativa}, é maior que o número secreto!!`)
-    } 
-    else{
-        alert(`O número ${tentativa}, é menor que o número secreto!!`)
+let tentativa 
+let Numerotentativa = 1   // Declarando a variavel p/ ao final quando der erro acrescentar mais 1.
+while (NumeroSecreto!= tentativa){
+    tentativa = prompt('Escolha seu numero:');
+
+    if (NumeroSecreto == tentativa) {
+        console.log('Muito bom, você acertou!! O número era ' + NumeroSecreto + '!!') 
+        
+        alert(`Muito bom, você acertou em ${Numerotentativa} tentativas!!`)
+        
     }
-};
+    else{
+        if(NumeroSecreto < tentativa){
+            alert(`O número ${tentativa}, é maior que o número secreto!!`)
+        } 
+        else{
+            alert(`O número ${tentativa}, é menor que o número secreto!!`)
+        }
+        Numerotentativa ++ // acrescentando mais um numero a tentativa
+    };
+
+}
