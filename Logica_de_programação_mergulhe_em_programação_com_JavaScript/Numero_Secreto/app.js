@@ -1,5 +1,5 @@
-let NumeroSecreto = parseInt(Math.random() * 10 + 1); //math.random usa entre 0 e 1, multiplicando chega 
-//a numeros maiores, parseInt é para pegar numeros inteiros;
+let NumeroSecretoMaximo = 100;    // Definindo uma variavel para altera-la dentro do math.random
+let NumeroSecreto = parseInt(Math.random() * NumeroSecretoMaximo + 1); //Diminuindo  o acoplamento
 let tentativa;
 let Numerotentativa = 1;
 while (NumeroSecreto!= tentativa){
