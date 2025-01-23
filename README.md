@@ -11,7 +11,7 @@ O usuário insere um palpite para tentar adivinhar o número.
 O jogo fornece feedback se o palpite está acima ou abaixo do número secreto.
 O jogo continua até que o usuário adivinhe corretamente o número.
 
-Durante o desenvolvimento deste projeto, serão utilizados os seguintes conceitos de programação:
+Conceitos de programação:
 Variáveis,
 Loops,
 Condicionais (if e else)
