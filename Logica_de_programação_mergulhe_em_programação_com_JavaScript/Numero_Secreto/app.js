@@ -15,12 +15,11 @@ while (NumeroSecreto!= tentativa){
             alert(`O número ${tentativa}, é menor que o número secreto!!`)
         }
         Numerotentativa ++
-    };
+    }
 }
 
-if(Numerotentativa == 1){
-    alert(`Muito bom, você acertou em ${Numerotentativa} tentativa!!`)
-}
-else {                                                                                                                                              
-    alert(`Muito bom, você acertou em ${Numerotentativa} tentativas!!`)
-}
+let palavraTentativa = Numerotentativa > 1 ? 'tentativas' : 'tentativa';
+
+alert(`Isso ai! Você descobriu o número secreto ${NumeroSecreto} com ${Numerotentativa} ${palavraTentativa}.`);
+
+
