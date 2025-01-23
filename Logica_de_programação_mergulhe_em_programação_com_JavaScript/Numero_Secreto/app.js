@@ -1,6 +1,7 @@
-let NumeroSecreto = 29;
-let tentativa 
-let Numerotentativa = 1   
+let NumeroSecreto = parseInt(Math.random() * 10 + 1); //math.random usa entre 0 e 1, multiplicando chega 
+//a numeros maiores, parseInt é para pegar numeros inteiros;
+let tentativa;
+let Numerotentativa = 1;
 while (NumeroSecreto!= tentativa){
     tentativa = prompt('Escolha seu numero:');
 
@@ -15,8 +16,8 @@ while (NumeroSecreto!= tentativa){
             alert(`O número ${tentativa}, é menor que o número secreto!!`)
         }
         Numerotentativa ++
-    }
-}
+    };
+};
 
 let palavraTentativa = Numerotentativa > 1 ? 'tentativas' : 'tentativa';
 
