@@ -35,6 +35,8 @@ function verificarChute(){
 
 */
 let numeroSecreto = gerarNumeroAleatorio()
+
+
 function ExibirTextoNaTela(tag, texto){  
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -43,10 +45,11 @@ ExibirTextoNaTela('h1','Jogo do Número Secreto');
 ExibirTextoNaTela('p','Escolha um número entre 1 e 10');
 
 function verificarChute(){
-    console.log('Foi realizado um clik.')
+    let chute = document.querySelector('input').value // value é usado para obter o valor de uma tag retornando como string
+    console.log(chute == numeroSecreto)
 } ;
 
 function gerarNumeroAleatorio(){
-    return parseInt(Math.random() * 10 + 1 ) // retorna este valor para variavel
+    return parseInt(Math.random() * 10 + 1); // retorna este valor para variavel
 };
 
