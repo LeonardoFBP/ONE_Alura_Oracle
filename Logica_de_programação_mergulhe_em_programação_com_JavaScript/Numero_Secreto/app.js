@@ -35,15 +35,18 @@ function verificarChute(){
 
 */
 let numeroSecreto = gerarNumeroAleatorio()
+
 function ExibirTextoNaTela(tag, texto){  
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
+
 ExibirTextoNaTela('h1','Jogo do Número Secreto');
 ExibirTextoNaTela('p','Escolha um número entre 1 e 10');
 
 function verificarChute(){
-    console.log('Foi realizado um clik.')
+    let chute = DocumentType.querySelector('Imput').value;
+    console.log(chute == numeroSecreto)
 } ;
 
 function gerarNumeroAleatorio(){
