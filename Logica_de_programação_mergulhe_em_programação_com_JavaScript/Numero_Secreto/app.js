@@ -22,11 +22,25 @@ while (NumeroSecreto!= tentativa){
 let palavraTentativa = Numerotentativa > 1 ? 'tentativas' : 'tentativa';
 
 alert(`Isso ai! Você descobriu o número secreto ${NumeroSecreto} com ${Numerotentativa} ${palavraTentativa}.`);
-*/
+
+-----------------------------------------------------------------------------------------------------------------
 let titulo = document.querySelector('h1');  // Declarando variavel para alterar o texto, DOCUMENT seleciona o HTML, QuerrySelector seleciona o local do HTML.
 titulo.innerHTML = 'Jogo do número secreto';  //Para inserir deve usar a variavel com a propriedade.innerHTML e definir.
 let paragrafo = document.querySelector('p');
 paragrafo.innerHTML = 'Escolha um número de 1 a 10';
+
+function verificarChute(){
+    console.log('Foi realizado um clik.')
+} 
+
+*/
+function ExibirTextoNaTela(tag, texto){  
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
+ExibirTextoNaTela('h1','Jogo do Número Secreto');
+ExibirTextoNaTela('p','Escolha um número entre 1 e 10');
+
 
 function verificarChute(){
     console.log('Foi realizado um clik.')
