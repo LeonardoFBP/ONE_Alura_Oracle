@@ -46,10 +46,10 @@ ExibirTextoNaTela('p','Escolha um número entre 1 e 10');
 
 function verificarChute(){
     let chute = document.querySelector('input').value // value é usado para obter o valor de uma tag retornando como string
-    console.log(chute == numeroSecreto)
+    console.log(chute == numeroSecreto) // Verifica se o valor do chute é igual ao número secreto
 } ;
 
 function gerarNumeroAleatorio(){
-    return parseInt(Math.random() * 10 + 1); // retorna este valor para variavel
+    return parseInt(Math.random() * 10 + 1); // retorna este valor para variavel fora da função!
 };
 
